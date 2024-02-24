@@ -1,0 +1,96 @@
+body {
+  background-color: hsl(216, 12%, 8%);
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+.container {
+  width: 325px;
+  height: 325px;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 30px;
+  margin: 20px 0px;
+}
+.icon {
+  background-color: rgb(84, 84, 84);
+  border: none;
+  border-radius: 50px;
+  padding: 7px 20px;
+}
+
+.title {
+  color: white;
+}
+
+.description {
+  color: hsl(216, 12%, 54%);
+  /* letter-spacing: 1px; */
+}
+.stars {
+  color: white;
+  display: flex;
+  flex-direction: row;
+}
+input[type="radio"] {
+  display: none;
+}
+.stars {
+  margin: 10px 0px;
+  padding: 15px 0px;
+}
+
+.star {
+  cursor: pointer;
+  transition: color 200ms;
+}
+.rating_para {
+  margin: 7px;
+  color: hsl(216, 12%, 54%);
+}
+
+.submit {
+  color: whitesmoke;
+  border: none;
+  padding: 10px 120px;
+  border-radius: 50px;
+  background-color: hsl(25, 97%, 53%);
+  letter-spacing: 3px;
+  text-decoration: none;
+}
+
+.submit:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: whitesmoke;
+}
+
+.thank_you {
+  width: 325px;
+  height: 325px;
+  text-align: center;
+  background-color: hsl(213, 19%, 18%);
+  border-radius: 20px;
+  padding: 30px;
+}
+.thankyou_rating {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(214, 18%, 23%);
+  border-radius: 50px;
+  padding: 5px 0px;
+}
+.thankyou_wish {
+  color: hsl(0, 0%, 100%);
+}
+.thankyou_para {
+  color: hsl(216, 12%, 54%);
+}
+
+@media screen and (min-width: 500px) {
+  .container,
+  .thank_you {
+    margin: auto;
+    align-items: center;
+  }
+}
